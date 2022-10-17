@@ -1,0 +1,270 @@
+body {
+    min-height: 100vh;
+    padding: 10px;
+  }
+
+.bolded { 
+  font-weight: bold; 
+}
+
+button {
+    background-color: #9d2235;
+    width: 100px;
+    height: 70px;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px #990000;
+    color: #ffc72c;
+    cursor: pointer;
+    position: right;
+  }
+
+u { 
+    text-decoration: underline;
+  }
+
+.borderexample {
+    border-width:3px;
+    border-style:solid;
+    border-color:#000000;
+    background:white;
+  }
+
+.imgbox {
+      display: grid;
+      height: 100%;
+      float: left;
+  }
+.left-fit {
+      max-width: 100%;
+      max-height: 80vh;
+      margin: auto;
+      float: left;
+}
+
+.img-resize {
+  max-width:40%;
+  max-height:40%;
+  float: right;
+}
+    
+
+
+  /* SIDEBAR POSITION */
+    /* AKA CONTAINER */
+  .sidebar {
+    background-color: #9d2235;
+    height: 800px;
+    width: 25px;
+    position: fixed;
+    top: 50%;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    right: 0;
+    min-width: 275px;
+    border-radius: 20px;
+  }
+  .sidebar__content {
+    padding: 8px;
+  }
+
+  /* SIDEBAR HIDDEN STATE */
+  .sidebar[aria-hidden="true"] {
+    transition: 200ms;
+    transform: translateX(100%);
+  }
+  /* SIDEBAR VISIBLE STATE */
+  .sidebar:not([aria-hidden]),
+  .sidebar[aria-hidden="false"] {
+    transition: 200ms;
+    transform: translateX(0);
+  }
+
+
+/* "X" button in sidebar */ 
+  .CloseBTN {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 18px;
+    margin-left: 32px;
+    cursor: pointer;
+  }
+
+
+ /* section 1: current task/state */
+  .one
+  {
+      background-color:white;
+      height: 15%;
+      margin-top:0;
+      border-radius: 10px;
+      text-align: center;
+      padding: 8px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+  }
+
+/* section 2 */
+  .two
+  {
+      background-color:white;
+      height: 10%;
+      margin-top:5px;
+      border-radius: 10px;
+      text-align: center;
+      padding: 8px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+  }
+
+    /* boxes for general questions */
+  .boxed {
+    border: 1px solid #ffc72c;
+    border-radius: 10px;
+    padding: 4px;
+    margin-top: 4px;
+  }
+
+
+    /* Slider for general questions  */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 17px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9d2235;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked+.slider {
+    background-color: green;
+  }
+  
+  input:focus+.slider {
+    box-shadow: 0 0 1px;
+  }
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 17px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  #menu2 {
+  display:none;
+  }
+
+
+  /* section 3: situation specific questions */
+  .three
+  {
+    background-color:white;
+    height: 15%;
+    margin-top:5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .tree{
+    --spacing : 1.5 rem;
+    --radius : 10px;
+    text-align:left;
+    margin-left: auto;
+    line-height: 1;
+    padding: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  
+
+  .tree li{
+    display      : block;
+    position     : relative;
+    padding-left : 0;
+
+  }
+  
+  .tree ul{
+    margin-left  : calc(var(--radius) - var(--spacing));
+    padding-left : 10px;
+  }
+
+
+
+  /* section 4: Search Box/Query */
+  .four
+  {
+    border-radius: 10px;
+  }
+
+  .searchBox{
+    text-align:center;
+    position:bottom;
+    margin-top:10px;
+    width:100%;
+  }
+
+
+    /* section 5: Query History */
+  .five
+  {
+    text-align: center;
+    border-radius: 10px;
+  }
+
+
+  .query_button{
+    background-color:#ffc72c;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    color: black;
+    cursor: pointer;
+    position: right;
+    margin-top: 10px;
+  }

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Page Title: KNIC</title>
+    <!-- for general question toggle --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+      <!-- RTG Screenshot and page text -->
+  <div>
+    <img src="Google_Colaboratory_SVG_Logo.svg.png" alt="Google Colab Logo" style="float:left;width:75px;height:50px;">
+    <h1>Reader Translator Generator (RTG)</h1>
+    <h4> Reader Translator Generator (RTG)
+      Author: Thamme Gowda
+      
+      RTG is a neural machine translation toolkit.
+      
+      This notebook walks you through: Setup of RTG, Preparing a parallel dataset for DE-EN, tokenization, tests etc
+      Training Transformer NMT using RTG.
+      For the docs, refer to <a href="https://isi-nlp.github.io/rtg/">https://isi-nlp.github.io/rtg/</a></h4>
+  <body>
+    <div class="imgbox">
+    <img class="left-fit" src="download_datasets_error.png" alt="RTG Error Example Downloading Datasets">
+    </div>
+   
+
+   <!-- Initial Sidebar and "Need Help?" Button -->
+    <div id="sidebar1" class="sidebar" aria-hidden="true">
+      <div class="CloseBTN" >&times;</div> 
+        <div style="text-align:center" class="sidebar__content"></div>
+
+
+        <!-- Section 1: Current Task/State Nodes-->
+      <div class="one">
+        <span class="bolded">Current Task/State</span>
+        
+      
+        <!--
+        <div>Data Preperation</div>
+        <div >Download Datasets</div>
+        -->
+
+
+      </div>
+
+
+
+    <!-- Section 2: General Questions -->
+      <div class="two">
+
+        <form>
+          <label class="switch">
+                <input type="checkbox" id="toggle" checked="true" />
+                <div class="slider round"></div>
+            </label>
+        </form>
+        
+        <div id="menu1">
+          <div id=general_question_green_1 class="boxed">
+            What's next?
+          </div>
+          <div id=general_question_green_2 class="boxed">
+            Does this look right?
+          </div>
+        </div>
+
+        <div id="menu2">
+          <div id=general_question_red_1 class="boxed">
+            What's wrong?
+          </div>
+          <div id=general_question_red_2 class="boxed">
+            What should this look like?
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Section 3: Specific Questions -->
+      <div class="three">
+        <span class="bolded">Situation Specific Q&A</span>
+  
+        <ul class="tree">
+          <li>
+            <details close>
+              <summary>Question 1</summary>
+              <ul>
+                <li>
+                    <ul>
+                      <li>Answer 1</li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+
+        <ul class="tree">
+            <li>
+              <details close>
+                <summary>Why is my tensorflow board empty?</summary>
+                <ul>
+                  <li>
+                      <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      </ul>
+                    </details>
+                  </li>
+                  </ul>
+
+                  <ul class="tree">
+                    <li>
+                      <details close>
+                        <summary>Question 3</summary>
+                        <ul>
+                          <li>
+                              <ul>
+                                <li>Answer 3</li>
+                              </ul>
+                            </details>
+                          </li>
+                          </ul>
+      </div>
+
+
+
+
+      <!--Section 4: Search Bar -->
+      <div class="four">
+        <input class='searchBox'type="search" placeholder="Ask Your Own Question"results="0" />
+      </div>
+
+
+      <!-- Section 5: Query History -->
+      <div class="five">
+        <button class="query_button" id="query_button">Query History</button>
+      </div>
+
+
+
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Sidebar Intitial "need help?" Button -->
+    <button style="float: right;" data-toggle-sidebar="sidebar1">Need Help?
+      <img class="img-resize" src="magnifying_glass.png" alt="magnifying glass png">
+      </button>
+
+    
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
